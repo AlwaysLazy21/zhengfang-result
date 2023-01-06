@@ -19,7 +19,7 @@ author = """
 
 def hello_page():
     print(author)
-    print("******************** XCU教务系统成绩查询助手 ********************")
+    print("******************** 正方教务成绩查询助手 ********************")
     print("resp: https://github.com/AlwaysLazy21/zhengfang-result")
 
 
