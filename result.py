@@ -5,6 +5,7 @@ import sys
 import time
 
 from selenium.webdriver import Edge
+from selenium.webdriver import EdgeOptions
 from selenium.webdriver.chrome.service import Service
 
 author = """
@@ -64,7 +65,9 @@ def set_message(user):
 
 
 def get_result(user):  # 操作selenium控制edge查成绩
-    web = Edge(service=Service(f"C:/Users/{os.environ['HOMEPATH'][7:]}/result/msedgedriver.exe"))
+    edge_option = EdgeOptions()
+    edge_option.add_experimental_option("excludeSwitches", ['enable-logging'])
+    web = Edge(service=Service(f"C:/Users/{os.environ['HOMEPATH'][7:]}/result/msedgedriver.exe"), options=edge_option)
     web.get(user['教务系统登录界面网址'])
     web.find_element(by="xpath", value='//*[@id="yhm"]').send_keys(user['用户名'])
     web.find_element(by="xpath", value='//*[@id="mm"]').send_keys(user['密码'])
