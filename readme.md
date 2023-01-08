@@ -4,15 +4,18 @@
 
 ## 使用说明
 
+### 注：仓库地址：https://github.com/AlwaysLazy21/zhengfang-result ，你在使用过程中如果有任何的问题，欢迎提出issue
+
 ### 首次使用
 
 - 将 msedgedriver result 两个文件放到统一路径下
-- 首次启动后会自动移动 edgedriver 
+- 启动后会自动移动**msedgedriver**
 - 会在 **C:/User/user/** 路径下创建一个 **result** 文件夹
 - **result** 存放两个文件 **config.json, msedgedriver.exe** 
 
 ### 重复使用
 
+- 每次启动前会自动检测**同级文件夹**和**桌面**是否存在**msedgedrive.exe**,并移动到目标位置，以便用户更新**msedgedriver.exe**
 - 默认读取 **config.json** 获取用户信息进行登录
 - 切换账号登录，登录成功后自动覆盖之前的用户信息
 
