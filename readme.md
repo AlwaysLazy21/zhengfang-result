@@ -10,7 +10,7 @@
 
 - 将 msedgedriver result 两个文件放到统一路径下
 - 启动后会自动移动**msedgedriver**
-- 会在 **C:/User/user/** 路径下创建一个 **result** 文件夹
+- 会在 **C:/Users/user/** 路径下创建一个 **result** 文件夹
 - **result** 存放两个文件 **config.json, msedgedriver.exe** 
 
 ### 重复使用
@@ -28,4 +28,4 @@
 ## 原理介绍
 
 - 开发环境：win11、python 3.11、edge、msedgedriver
-- 通过调用 edgedriver 操作 edge 浏览器模拟人操作
+- 通过调用 msedgedriver 操作 edge 浏览器模拟人操作
